@@ -2,8 +2,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1 {
+h1, h2, h3, h4, h5 {
   font-family: "PT Serif", serif;
+}
+h2 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 section {
@@ -34,6 +38,13 @@ section {
   100% {
     transform: rotate(360deg) scale(1);
   }
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -50px;
+  visibility: hidden;
 }
 
 #button-dark-mode.animate {
