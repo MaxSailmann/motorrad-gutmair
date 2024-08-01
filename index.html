@@ -210,7 +210,7 @@
       <a class="anchor" id="anchor-öffnungszeiten"></a>
       <div class="container">
         <h2>Öffnungszeiten</h2>
-        
+
         <div class="row">
           <table class="table text-center">
             <thead>
@@ -233,8 +233,7 @@
               </tr>
               <tr>
                 <th scope="row">Mittwoch</th>
-                <td><b>GESCHLOSSEN</b></td>
-                <td><b>GESCHLOSSEN</b></td>
+                <td colspan="2"><b>GESCHLOSSEN</b></td>
               </tr>
               <tr>
                 <th scope="row">Donnerstag</th>
@@ -253,8 +252,7 @@
               </tr>
               <tr>
                 <th scope="row">Sonntag</th>
-                <td><b>GESCHLOSSEN</b></td>
-                <td><b>GESCHLOSSEN</b></td>
+                <td colspan="2"><b>GESCHLOSSEN</b></td>
               </tr>
             </tbody>
           </table>
@@ -267,6 +265,36 @@
       <a class="anchor" id="anchor-about"></a>
       <div class="container">
         <h2>About</h2>
+
+        <div class="row">
+          <div class="col-lg-7 text-lg-start">
+            <p class="lead">
+              Motorrad Gutmair wurde am 1. März 2000 als Nebenerwerbsbetrieb
+              gegründet. Was als Hobby begann, entwickelte sich schnell zu einer
+              Leidenschaft, mit dem Ziel, hochwertige Motorradservices
+              anzubieten.
+            </p>
+            <p class="lead">
+              Nach sechs Jahren Teilzeitbetrieb wagten wir am 1. Februar 2007
+              den Schritt in die Vollzeit-Selbstständigkeit. Dies ermöglichte
+              uns, unsere Dienstleistungen weiter auszubauen.
+            </p>
+            <p class="lead">
+              Obwohl wir uns räumlich nicht vergrößern wollten, bieten wir einen
+              umfassenden Rundumservice auf kleinem Raum. Unsere Preise sind
+              fair und leistungsgerecht, und wir stehen den großen Anbietern in
+              nichts nach.
+            </p>
+          </div>
+          <div class="col-md-10 mx-auto col-lg-5">
+            <img
+              src="./images/about_image.jpg"
+              class="about_image about-image"
+              alt="Foto Werkstatt Motorrad Gutmair"
+              loading="lazy"
+            />
+          </div>
+        </div>
       </div>
     </section>
 
@@ -276,12 +304,17 @@
         <footer class="py-2">
           <ul class="nav justify-content-center mb-2">
             <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-body-secondary"
-                >Impressum</a
+              <button
+                type="button"
+                class="nav-link px-2 text-body-secondary"
+                data-bs-toggle="modal"
+                data-bs-target="#modalImpressum"
               >
+                Impressum
+              </button>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-body-secondary"
+              <a href="./datenschutz.html" target="blank" class="nav-link px-2 text-body-secondary"
                 >Datenschutzerklärung</a
               >
             </li>
@@ -289,6 +322,42 @@
           <p class="text-center text-body-secondary">© 2024 Motorrad Gutmair</p>
         </footer>
       </div>
+    </section>
+
+    <!-- Modal -->
+    <section>
+      <div
+        class="modal fade"
+        id="modalImpressum"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Impressum</h5>
+            </div>
+            <div class="modal-body">
+              Motorrad Gutmair<br />Inhaber Thomas Gutmair<br /><br />Bambergerstraße
+              17<br />96172 Mühlhausen<br /><br />Tel.: 09548 / 981413<br />Fax.:
+              09548 / 981412<br />motorrad.gutmair@freenet.de<br /><br />Ust.-Id.Nr.:
+              DE229272798
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
 
     <script
