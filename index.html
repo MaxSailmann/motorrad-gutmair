@@ -25,10 +25,18 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body class="noselect">
+  <body
+    class="noselect"
+    data-bs-spy="scroll"
+    data-bs-target="#navbar-scrollspy"
+    tabindex="0"
+  >
     <!-- Fixed Nav Bar -->
-    <section>
-      <nav class="navbar navbar-expand-md fixed-top border-bottom bg-dark">
+    <section id="section-navbar">
+      <nav
+        class="navbar navbar-expand-md fixed-top border-bottom bg-dark"
+        id="navbar-scrollspy"
+      >
         <div class="container-fluid">
           <span class="navbar-brand">Motorrad Gutmair</span>
           <button
@@ -74,9 +82,8 @@
     </section>
 
     <!-- Start -->
-    <section class="pb-5 border-bottom">
-      <a class="anchor" id="anchor-start"></a>
-      <div class="container text-center mt-5">
+    <section id="anchor-start" class="border-bottom">
+      <div class="container text-center">
         <img
           class="d-block mx-auto mb-4"
           src="./images/icons/Logo.png"
@@ -102,8 +109,7 @@
     </section>
 
     <!-- Leistungen -->
-    <section class="pb-5 border-bottom">
-      <a class="anchor" id="anchor-leistungen"></a>
+    <section id="anchor-leistungen" class="border-bottom">
       <div class="container">
         <h2>Leistungen</h2>
         <div
@@ -206,52 +212,45 @@
     </section>
 
     <!-- Öffungszeiten -->
-    <section class="pb-5 border-bottom">
-      <a class="anchor" id="anchor-öffnungszeiten"></a>
+    <section id="anchor-öffnungszeiten" class="border-bottom">
       <div class="container">
         <h2>Öffnungszeiten</h2>
 
         <div class="row">
-          <table class="table text-center">
+          <table class="table lead table-hover table-borderless text-md-start align-middle">
             <thead>
               <tr>
                 <th scope="col"></th>
-                <th scope="col">Vormittag</th>
-                <th scope="col">Nachmittag</th>
+                <th scope="col"></th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th scope="row">Montag</th>
-                <td>10:00 Uhr - 12:00 Uhr</td>
-                <td>14:00 Uhr - 18:00 Uhr</td>
+                <td scope="row">Montag</td>
+                <td>10:00 - 12:00 Uhr<br />14:00 - 18:00 Uhr</td>
               </tr>
               <tr>
-                <th scope="row">Dienstag</th>
-                <td>10:00 Uhr - 12:00 Uhr</td>
-                <td>14:00 Uhr - 18:00 Uhr</td>
+                <td scope="row">Dienstag</td>
+                <td>10:00 - 12:00 Uhr<br />14:00 - 18:00 Uhr</td>
               </tr>
               <tr>
-                <th scope="row">Mittwoch</th>
-                <td colspan="2"><b>GESCHLOSSEN</b></td>
+                <td scope="row">Mittwoch</td>
+                <td><b>GESCHLOSSEN</b></td>
               </tr>
               <tr>
-                <th scope="row">Donnerstag</th>
-                <td>10:00 Uhr - 12:00 Uhr</td>
-                <td>14:00 Uhr - 18:00 Uhr</td>
+                <td scope="row">Donnerstag</td>
+                <td>10:00 - 12:00 Uhr<br />14:00 - 18:00 Uhr</td>
               </tr>
               <tr>
-                <th scope="row">Freitag</th>
-                <td>10:00 Uhr - 12:00 Uhr</td>
-                <td>14:00 Uhr - 18:00 Uhr</td>
+                <td scope="row">Freitag</td>
+                <td>10:00 - 12:00 Uhr<br />14:00 - 18:00 Uhr</td>
               </tr>
               <tr>
-                <th scope="row">Samstag</th>
-                <td>10:00 Uhr - 12:00 Uhr</td>
-                <td>14:00 Uhr - 18:00 Uhr</td>
+                <td scope="row">Samstag</td>
+                <td>10:00 - 12:00 Uhr<br />14:00 - 18:00 Uhr</td>
               </tr>
               <tr>
-                <th scope="row">Sonntag</th>
+                <td scope="row">Sonntag</td>
                 <td colspan="2"><b>GESCHLOSSEN</b></td>
               </tr>
             </tbody>
@@ -261,8 +260,7 @@
     </section>
 
     <!-- About -->
-    <section class="pb-5 border-bottom">
-      <a class="anchor" id="anchor-about"></a>
+    <section id="anchor-about" class="border-bottom">
       <div class="container">
         <h2>About</h2>
 
@@ -274,7 +272,7 @@
               Leidenschaft, mit dem Ziel, hochwertige Motorradservices
               anzubieten.
             </p>
-            <p class="lead">
+            <p class="lead text-right">
               Nach sechs Jahren Teilzeitbetrieb wagten wir am 1. Februar 2007
               den Schritt in die Vollzeit-Selbstständigkeit. Dies ermöglichte
               uns, unsere Dienstleistungen weiter auszubauen.
@@ -286,7 +284,7 @@
               nichts nach.
             </p>
           </div>
-          <div class="col-md-10 mx-auto col-lg-5">
+          <div class="col-md-10 mx-auto mb-4 col-lg-5 text-center text-lg-end">
             <img
               src="./images/about_image.jpg"
               class="about_image about-image"
@@ -314,7 +312,10 @@
               </button>
             </li>
             <li class="nav-item">
-              <a href="./datenschutz.html" target="blank" class="nav-link px-2 text-body-secondary"
+              <a
+                href="./datenschutz.html"
+                target="blank"
+                class="nav-link px-2 text-body-secondary"
                 >Datenschutzerklärung</a
               >
             </li>
@@ -325,7 +326,7 @@
     </section>
 
     <!-- Modal -->
-    <section>
+    <section id="section-modal">
       <div
         class="modal fade"
         id="modalImpressum"
@@ -357,7 +358,6 @@
           </div>
         </div>
       </div>
-
     </section>
 
     <script

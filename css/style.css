@@ -1,5 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
+  position: relative;
 }
 
 h1, h2, h3, h4, h5 {
@@ -11,7 +12,10 @@ h2 {
 }
 
 section {
-  padding-top: 10px;
+  padding-top: 70px;
+}
+section#section-navbar, section#section-modal{
+  padding-top: 0;
 }
 
 .noselect {
@@ -57,3 +61,4 @@ a.anchor {
 .about-image {
   max-width: 362px;
 }
+
